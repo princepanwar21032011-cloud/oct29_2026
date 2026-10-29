@@ -12,3 +12,4 @@ jobs:
           cd
           ls -al
           cat /etc/os-release
+          tree -a -L 3
