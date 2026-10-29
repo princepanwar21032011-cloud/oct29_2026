@@ -7,6 +7,9 @@ jobs:
     steps:
       - name: mystep1
         run: |
+          echo "Build Number: ${{ github.run_number }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run Attempt: ${{ github.run_attempt }}"
           whoami
           pwd
           cd
